@@ -76,6 +76,18 @@ endif
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+    
+# KernelAdiutorMod
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/KernelAdiutorMod/KernelAdiutorMod.apk:system/priv-app/KernelAdiutorMod/KernelAdiutorMod.apk
+
+# Adaway
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/AdAway/AdAway.apk:system/priv-app/AdAway/AdAway.apk
+    
+# CpuSpyMaterial
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/CPUSpyMaterial/CPUSpyMaterial.apk:system/priv-app/CPUSpyMaterial/CPUSpyMaterial.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
